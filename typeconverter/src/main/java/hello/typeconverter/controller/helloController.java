@@ -20,6 +20,7 @@ public class helloController {
 
     @GetMapping("/hello-v2")
     public String helloV2(@RequestParam Integer data) {
+        //Formatter 적용 -> /hello-v2?data=10,000 -> 10000이 Integer 타입으로 변환되어 들어옴
         System.out.println("data = " + data);
         return "ok";
     }
